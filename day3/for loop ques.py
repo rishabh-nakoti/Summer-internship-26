@@ -115,7 +115,7 @@ b = int(input("Enter 2nd no."))
 for i in range(a, a * b + 1):
     if i % a == 0 and i % b == 0:
         print("LCM =", i)
-        break"""
+        break
 
 
 
@@ -123,26 +123,27 @@ for i in range(a, a * b + 1):
 #43
 a = int(input("Enter 1st no."))
 b = int(input("Enter 2nd no."))
-
-for i in range(a*b,0,-1):
+hcf=0
+for i in range(1,a+1):
     if(a%i==0 and b%i==0):
-      print("HCF = ",i)
-      break
-
-
-
-#44
-for i in range(1,11):
-  k=0
-  for j in range(1,i+1):
-      if(i%j==0):
-        k=k+1
-      if(k==2):
-        print(i)
+        hcf=i
+print("HCF = ",hcf)
+      
 
 
 
 #45
+for i in range(1,1001):
+  k=0
+  for j in range(1,i+1):
+      if(i%j==0):
+        k=k+1
+  if(k==2):
+        print(i)
+
+
+"""
+#46
 for i in range(1,1001):
   k=0
   for j in range(1,i):
@@ -150,8 +151,3 @@ for i in range(1,1001):
         k=k+j
   if(k==i):
       print(i)
-    
-
-
-
-    
