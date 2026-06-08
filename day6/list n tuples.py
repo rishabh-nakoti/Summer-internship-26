@@ -1,4 +1,4 @@
-"""a=[10,20,30,40,50]
+a=[10,20,30,40,50]
 l=len(a)
 sum=0
 for i in range(0,l):
@@ -42,7 +42,7 @@ for i in range(0,l):
         b[i]=temp
 print(a)
 print(b)
-"""
+
 
 
 a=[10,20,400,60,-10]
@@ -60,3 +60,132 @@ print("min = ",mn)
 
 
 #bubble sort
+a=[10,20,400,60,-10]
+l=len(a)
+for j in range(0,l):
+    for i in range(0,l-1):
+        if a[i]>a[i+1]:
+            a[i],a[i+1]=a[i+1],a[i]
+print(a)
+
+
+a=[10,20,30,40,50,60]
+b=[11,22,33,44,55,66]
+l=len(a)
+for i in range(0,l):
+    if i%2==0:
+        a[i],b[i+1]=b[i+1],a[i]
+print(a)
+print(b)
+
+
+a=[10,20,30,40,50,60]
+b=[11,22,33,44,55,66]
+l=len(a)
+for i in range(l):
+    if i%2!=0:
+        a[i],b[i-1]=b[i-1],a[i]
+print(a)
+print(b)
+
+
+a=[10,20,30,40,50,60]
+b=[11,22,33,44,55,66]
+l=len(a)
+for i in range(l):
+    if i%2==0:
+        a[i],b[i+1]=b[i+1],a[i]
+    elif i%2!=0:
+        a[i],b[i-1]=b[i-1],a[i]
+print(a)
+print(b)
+
+
+#Tupples
+
+
+c=(10,20,30,40,50,600)
+lst=list(c)
+l=len(c)
+
+for i in range(0,l):
+    if(i%2==0):
+        b=lst[i]
+        lst[i]=lst[i+1]
+        lst[i+1]=b
+c=tuple(lst)
+print(c)
+
+
+
+a=(10,20,30,40,50,60)
+b=(11,22,33,44,55,66)
+la=list(a)
+lb=list(b)
+l=len(la)
+for i in range(0,l):
+    if i%2==0:
+        temp=la[i]
+        la[i]=lb[i]
+        lb[i]=temp
+a=tuple(la)
+b=tuple(lb)
+print(a)
+print(b)
+
+
+
+#bubble sort
+a=(10,20,400,60,-10)
+la=list(a)
+l=len(la)
+for j in range(0,l):
+    for i in range(0,l-1):
+        if la[i]>la[i+1]:
+            la[i],la[i+1]=la[i+1],la[i]
+a=tuple(la)
+print(a)
+
+
+a=(10,20,30,40,50,60)
+b=(11,22,33,44,55,66)
+la=list(a)
+lb=list(b)
+l=len(a)
+for i in range(0,l):
+    if i%2==0:
+        la[i],lb[i+1]=lb[i+1],la[i]
+a=tuple(la)
+b=tuple(lb)
+print(a)
+print(b)
+
+
+a=(10,20,30,40,50,60)
+b=(11,22,33,44,55,66)
+la=list(a)
+lb=list(b)
+l=len(la)
+for i in range(l):
+    if i%2!=0:
+        la[i],lb[i-1]=lb[i-1],la[i]
+a=tuple(la)
+b=tuple(lb)
+print(a)
+print(b)
+
+
+a=(10,20,30,40,50,60)
+b=(11,22,33,44,55,66)
+la=list(a)
+lb=list(b)
+l=len(la)
+for i in range(l):
+    if i%2==0:
+        la[i],lb[i+1]=lb[i+1],la[i]
+    elif i%2!=0:
+        la[i],lb[i-1]=lb[i-1],la[i]
+a=tuple(la)
+b=tuple(lb)
+print(a)
+print(b)
